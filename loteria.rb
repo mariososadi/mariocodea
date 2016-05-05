@@ -1,5 +1,10 @@
 def shuffle(array)
-  # escribe el algoritmo que revuelva un array
+
+  for i in (array.length - 1).downto(1) do
+    j = rand(i)
+    array[i], array[j] = array[j], array[i]
+  end 
+  array.join
 end
 
 
@@ -11,3 +16,4 @@ array = (1..15).to_a
     raise "No esta revolviendo bien" if shuffle(array) == shuffle(array)
 end
 p true
+
