@@ -1,23 +1,22 @@
 def prime_array(int)
   array = (2..int).to_a
-  array.select!{|x| (2..x-1).select{|i| x % i == 0 }.count == 0}
+  array.select!{ |x| (2..x-1).select{ |i| x % i == 0 }.count == 0 }
 end
 
 def prime_factors(int)
   array = prime_array(int)
-  a=[]
+  a = []
   
-  array.each do |x|
+  array.each { |x|
 	(int).times {
 	  if int.to_i % x.to_i == 0 
 	    a << x
 	    int = int / x
 	  else 
-	  	break
+	    break
 	  end
-		}
-	
-  end
+	}
+  }
   return a
 end
 
