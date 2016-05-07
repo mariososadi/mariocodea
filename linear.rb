@@ -13,7 +13,6 @@ def global_linear_search(obj,array)
   a = []
   sum = 0
   for i in 0.upto(array.length - 1)
-    #sum += 1 if array[i] == obj
     if array[i] == obj
       a[sum] = i
       sum+=1
