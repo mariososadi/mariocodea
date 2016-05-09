@@ -14,12 +14,18 @@ def factorial_recursive(num)
     for i in 1.upto(num.to_i - 1) do
       n*=num.to_i - 1
     end
-  n*num
+  return n*num
   end
 end
 
-p factorial(5) == 120
-p factorial(4) == 24
-p factorial(0) == 1
-p factorial(1) == 1
-p factorial(6) == 720 
+p factorial_iterative(5) == 120
+p factorial_iterative(4) == 24
+p factorial_iterative(0) == 1
+p factorial_iterative(1) == 1
+p factorial_iterative(6) == 720 
+
+p factorial_recursive(5) == 120
+p factorial_recursive(4) == 24
+p factorial_recursive(0) == 1
+p factorial_recursive(1) == 1
+p factorial_recursive(6) == 720 
