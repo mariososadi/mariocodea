@@ -12,7 +12,7 @@ def factorial_recursive(num)
   else
    n = 1
     for i in 1.upto(num.to_i - 1) do
-      n*=num.to_i - 1
+      n*=(num.to_i - i)
     end
   return n*num
   end
