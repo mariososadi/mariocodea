@@ -1,17 +1,21 @@
 def factorial_iterative(num)
   n=1
   1.upto(num.to_i) {|x| n*=x}
-  n
+  return n
 end
 
-# Pruebas
+
 
 def factorial_recursive(num)
-  if n==0
-    return 1
+  if num <= 1
+    n = 1
   else
-   for i in   1.upto(num.to_i) {|x| n*=x}
-  n
+   n = 1
+    for i in 1.upto(num.to_i - 1) do
+      n*=num.to_i - 1
+    end
+  n*num
+  end
 end
 
 p factorial(5) == 120
