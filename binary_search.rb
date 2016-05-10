@@ -1,20 +1,21 @@
 def binary_search(num, array)
-  L = 0
-  R = array.size - 1
-  m = (L + R) / 2
+  l = 0
+  r = array.size - 1 
+  m = (l + r) / 2
 
 until m = array[m]
   if array[m] < num
-    L = m + 1
-    m = (L + R) / 2
+    l = m + 1
+    m = (l + r) / 2
   elsif array[m] > num
-    R = m - 1
-    m = (L + R) / 2
+    r = m - 1
+    m = (l + r) / 2
 
   else
     break
     return m
   end
+end
 end
 
 p binary_search(3, [1, 2, 3, 4, 5, 6])
