@@ -3,7 +3,7 @@ def binary_search(num, array)
   r = array.size - 1 
   m = (l + r) / 2
 
-until m = array[m]
+until m == array[m]
   if array[m] < num
     l = m + 1
     m = (l + r) / 2
@@ -12,6 +12,7 @@ until m = array[m]
     m = (l + r) / 2
   end
 end
+return m
 end
 
 p binary_search(1, [1, 2, 3, 4, 5, 6]) == 0
