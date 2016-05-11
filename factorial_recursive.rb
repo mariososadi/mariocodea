@@ -5,7 +5,7 @@ def factorial_iterative(num)
 end
 
 def factorial_recursive(num)
-  return 1 if num == 0
+  return 1 if num <= 1
   num -= 1
   x = num * (num+1)
   num -= 1
