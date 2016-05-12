@@ -1,19 +1,19 @@
-# def gato_board
-#   gato = Array.new(3){Array.new(3,"O")}
-#   gato.each do |x|
-#      r=rand(2)
-#      x[r] = "X"
-#     end
-#   for i in 0..2
-#     puts  
-#       for j in 0..2
-#         print "#{gato[i][j]}  "
-#       end
-#   end
-#   puts " "
-# end
+def gato_board
+ gato = Array.new(3){Array.new(3,"O")}
+ gato.each do |x|
+    r=rand(2)
+    x[r] = "X"
+   end
+ for i in 0..2
+   puts  
+     for j in 0..2
+       print "#{gato[i][j]}  "
+     end
+  end
+  puts " "
+end
 
-# 4.times {gato_board}
+4.times {gato_board}
 
 def gato_board_elbueno
   gato = Array.new(3){Array.new(3,"O")}
