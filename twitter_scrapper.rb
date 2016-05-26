@@ -39,7 +39,7 @@ end
   end
 
 end
-
+ 
 username = TwitterScrapper.new('https://twitter.com/desire_et')
 puts "Username: #{username.extract_username}"
 puts "---------------------------------------------------------------------------"
