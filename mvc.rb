@@ -1,3 +1,6 @@
+# ¡Atención! El programa está hecho asumiendo que ya existe un archivo "todo_list.csv" en la misma carpeta
+#  que el archvio base mvc.rb
+
 require 'csv'
 
 class List
