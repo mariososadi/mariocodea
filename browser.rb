@@ -1,3 +1,6 @@
+# Este programa sólo funciona con 'www.codea.mx' jejeje LOL. Las demás páginas o están cifradas o no están acomodadas como 
+# Codeacamp (barra superior con links hacia las landing pages ej. www.codeacamp.mx/posts)
+
 require 'net/http'
 require 'nokogiri'
 
